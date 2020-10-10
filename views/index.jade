@@ -1,5 +1,474 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='en')
+  head
+    title Prof. Rajendra Pawar | MIT WPU PUNE.
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet' href='Style/style.css')
+  body#myPage(data-spy='scroll' data-target='.navbar' data-offset='60')
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button' data-toggle='collapse' data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html')
+            span Prof. Rajendra Pawar
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#myCarousel') HOME
+            li
+              a(href='#research') RESEARCH
+            li
+              a(href='#projects') PROJECTS
+            li
+              a(href='#domain') DOMAIN
+            li
+              a(href='#workshop') WORKSHOPS
+            li
+              a(href='#gallery') GALLERY
+            li
+              a(href='#contact') CONTACT US
+    br
+    br
+    div
+      #myCarousel.carousel(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#myCarousel' data-slide-to='0')
+          //
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        // Wrapper for slides
+        .carousel-inner
+          .item.active
+            img(src='Images/mit_front_.jpg' alt='MIT Front Banner' height='10%' width='100%')
+    // Container (About Section)
+    #about.container-fluid.back-about
+      .row
+        .col-sm-1
+          // Demo Div for future purpose
+        .col-sm-5
+          center
+            img.img-circle(src='Images/Profile_pic.png' alt='Profile Pic')
+            h2.text-center
+              | Prof. Rajendra G. Pawar
+            hr.text-centerd(width='200px;')
+            span
+              | School of Computer Engineering & Technology 
+              br
+              |            MIT-World Peace University, Pune India
+          br
+        .col-sm-6(<span='')
+          br
+          br
+          |         Assistant professor in Computer Science Engineering at MIT World Peace University, Pune. Completed Bachelor of Engineering in Information Technology from TKIET, Warananagar, Kolhapur and 
+          |         M. Tech in Information technology from Bharati Vidyapeeth, Pune. 
+          br
+          br
+          |         Currently Pursuing Ph.D. in Computer Science Engineering  from Dr. Babasaheb Ambedkar Marathwada
+          |         University, Aurangabad. Former Lecturer in Information Technology at Sinhgad Institute of Technology, Lonavala since
+          |         July 2007 to April 2008. Visiting Lecturer in Computer Engineering and Information Technology at Bharati Vidyapeeth College of Engineering, Pune since July 2005 to Oct 2006
+    //
+      <div class="container-fluid bg-grey">
+      <div class="row">
+      <div class="col-sm-4">
+      <img src="~" width="300px" class="slideanim">
+      </div>
+      <div class="col-sm-8">
+      </div>
+      </div>
+      </div>
+      <div class="container-fluid bg-grey">
+      <div class="row">
+      <div class="col-sm-8">
+      </div>
+      <div class="col-sm-4">
+      </div>
+      </div>
+      </div>
+    // Container (Research Section)
+    #research.container-fluid.text-center
+      h2 Research
+      hr.text-centerd(width='200px;')
+      h4 Our Research and Pubilcations
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4
+            | Visual Similarity Using Convolution Neural Network over Textual Similarity in “Content- Based Recommender System
+          span
+            | Journal : International Journal of Advanced Science and Technology “Elsevier listed Scopus journal Vol. 27, No. 1, (2019), pp. 137-147
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4 Survey of Classical and Advanced Techniques for Product Recommendations
+          br
+          span
+            | Journal : Journal of emerging technologies and innovative research” Volume 6, Issue 5, May 2019
+          | >
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4 Farmer Buddy-Plant Leaf Disease Detection on Android Phone
+          br
+          span
+            | Journal : International Journal of  Research and analytical review, Volume 6, Issue 2, May 2019
+          | >
+      br
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4 Developing an Improvised E-Menu Recommendation System for Customer
+          br
+          span
+            | Journal : 5th International Conference on Advanced Computing, Networking, and Informatics (Springer) ,NIT GOA June 2017
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4 Indoor Wireless Tracking Using Wi-Fi
+          br
+          span
+            | Journal : International Engineering Research Journal (IERJ) Vol 2, Issue 8
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4  Enhanced Role-Based Access Control Model for Mobile Recommender System
+          span
+            | Journal : International Journal of Scientific Progress & Research Engineering, Vol 23, Issue 62
+      br
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4(style='color:#303030;')  Menu Recommender System for e-Restaurant 
+          br
+          span
+            | Conference : National conference on machine learning & high performance computing
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4 Intelligent question answering system
+          span
+            | Journal : International Journal of Advance Research in computer science Vol 2, Issue 1
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4  I-Manage Mobile Application
+          span
+            | Journal : International Journal Advanced Research in Computer Science & Management Studies Vol 2, Issue 1
+      br
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4(style='color:#303030;')  Bug Tracking System
+          span
+            | Journal : International journal of advanced and Innovative Research Vol 2, Issue 4, April 2013
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4 Efficient Remote Storage for Mobile Device
+          span
+            | Journal : International Journal of Computer Technology and Electronics Engineering Vol 2, Issue 1, April 2011
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4  Remote Storage for Mobile Device
+          span
+            | Journal : International Journal Computer Applications in Engineering, Technology and Sciences Vol 3, Issue 2, May 2010
+      br
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/publications.png' width='100px')
+          h4(style='color:#303030;') Implementation of Remote Storage for Mobile Device
+          span
+            | International Journal Computer Applications in Engineering, Technology and Sciences Vol 1, Issue 2, May 2010
+    #projects.container-fluid.text-center
+      hr.text-centerd(width='200px;')
+      h2 Projects
+      hr.text-centerd(width='200px;')
+      br
+      .row
+        .col-sm-12
+          .thumbnail
+            h2 Course Recommender System for Students
+            h4 by BCUD SPPU Pune of worth Rs. 26,000.00 
+            p  Domain : Research and Development Project
+        hr.text-centerd(width='200px;')
+    // Container (Domain Section)
+    #domain.container-fluid.text-center.bg-grey
+      h2.text-center Domains and Study
+      hr.text-centerd(width='200px;')
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/machine-learning.png' width='100px')
+          h4 Machine Learning
+          span
+            | Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.
+        .col-sm-4
+          img(src='Images/data-science.png' width='120px')
+          br
+          br
+          h4 Data Science
+          span
+            | Data Science is a blend of various tools, algorithms, and machine learning principles with the goal to discover hidden patterns from the raw data.A Data Scientist will look at the data from many angles, sometimes angles not known earlier.
+        .col-sm-4
+          img(src='Images/computer_graphics.png' width='140px')
+          h4 Computer Graphics
+          span
+            | Computer graphics is branch of computer science that deals with generating images with the aid of computers. Today, computer graphics is a core technology in digital photography, film, video games, cell phone and computer displays, and many specialized applications.
+      br
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/artificial_intelligence.png' width='100px')
+          br
+          h4  Artificial Intelligence
+          span
+            | Artificial Intelligence (AI) is the branch of computer sciences that emphasizes the development of intelligence machines, thinking and working like humans. For example, speech recognition, problem-solving, learning and planning.
+        .col-sm-4
+          img(src='Images/multimedi_system.png' width='90px')
+          h4 Multimedia System
+          span
+            | A Multimedia System is a system capable of processing multimedia data and applications. A Multimedia System is characterised by the processing, storage, generation, manipulation and rendition of Multimedia information. Characteristics of a Multimedia System.
+        .col-sm-4
+          img(src='Images/software_design.png' width='90px')
+          | s
+          h4(style='color:#303030;')  Software Design and Modeling
+          span
+            | Software models are ways of expressing a software design. Usually some sort of abstract language or pictures are used to express the software design. For object-oriented software, an object modeling language such as UML is used to develop and express the software design.
+      br
+      br
+      .row.slideanim
+        .col-sm-4
+          img(src='Images/software_engineering.png' width='100px')
+          br
+          br
+          h4 Software Engineering
+          span
+            | Software engineering is a branch of computer science which includes the development and building of computer systems software and applications software. Computer systems software is composed of programs that include computing utilities and operations systems.
+          | >
+        .col-sm-4
+          img(src='Images/information_security.png' width='170px')
+          h4 Information security
+          span
+            | Information Security refers to the processes and methodologies which are designed and implemented to protect print, electronic, or any other form of confidential, private and sensitive information or data from unauthorized access, use, misuse, disclosure, destruction, modification, or disruption.
+        .col-sm-4
+          img(src='Images/python_programming.png' width='140px')
+          h4 Python Programming
+          span
+            | Python is a general purpose and high level programming language. You can use Python for developing desktop GUI applications, websites and web applications. Also, Python, as a high level programming language, allows you to focus on core functionality of the application by taking care of common programming tasks.
+    // Container (Workshop Section)
+    #workshop.container-fluid
+      .text-center
+        h2 Workshop and Trainings
+        hr.text-centerd(width='200px;')
+        br
+      .row.slideanim
+        .col-sm-4.col-xs-12
+          .panel.panel-default.text-center
+            .panel-heading
+              h4 Open GL Programming”  for SE. Computer Students 
+            .panel-body
+              p
+                strong Location :
+                |  Government College Avasari,Pune
+              p
+                strong Duration : 
+                |  1 Day
+              p
+                strong Role :
+                |  As a Resource Person
+            .panel-footer
+              h3 Training Imparted
+        .col-sm-4.col-xs-12
+          .panel.panel-default.text-center
+            .panel-heading
+              h4 Computer Graphics programming - OPENGL for SE IT Students
+            .panel-body
+              p
+                strong Location :
+                |  JSPM 's BSITR, Pune
+              p
+                strong Duration : 
+                |  1 Day
+              p
+                strong Role :
+                |  As a Resource Person
+            .panel-footer
+              h3 Workshop Conducted
+        .col-sm-4.col-xs-12
+          .panel.panel-default.text-center
+            .panel-heading
+              h4 Workshop on “Python Programming for Product  Development ” 
+            .panel-body
+              p
+                strong Location :
+                |  MIT College of Engineering , Pune
+              p
+                strong Duration : 
+                |  4 Day
+              p
+                strong Role :
+                |  Course Coordinator
+            .panel-footer
+              h3 Workshop Conducted
+        .col-sm-4.col-xs-12
+          br
+          .panel.panel-default.text-center
+            .panel-heading
+              h4
+                | Elsevier Author Workshop 
+                br
+                br
+                br
+            .panel-body
+              p
+                strong Location :
+                |  NCL Pune
+              p
+                strong Duration : 
+                |  1 Day
+              p
+                strong Role :
+                |  Participant
+            .panel-footer
+              h3 Workshop Attended 
+        .col-sm-4.col-xs-12
+          br
+          .panel.panel-default.text-center
+            .panel-heading
+              h4
+                | QIP Works hop on “course Tools for Cyber Security” 
+                br
+                br
+            .panel-body
+              p
+                strong Location :
+                |  IIT Bombay
+              p
+                strong Duration : 
+                |  1 Week
+              p
+                strong Role :
+                |  Participant
+            .panel-footer
+              h3 Workshop Attended 
+        .col-sm-4.col-xs-12
+          br
+          .panel.panel-default.text-center
+            .panel-heading
+              h4
+                | International Conference on Advanced Computing, Networking & Informatics (Springer)
+            .panel-body
+              p
+                strong Location :
+                |  NIT, Goa
+              p
+                strong Duration : 
+                |  3 Day
+              p
+                strong Role :
+                |  Participant Paper Presentation
+            .panel-footer
+              h3 Conference
+    #gallery.carousel.slide.text-center(data-ride='carousel')
+      h2 GALLERY
+      hr.text-centerd(width='200px;')
+      br
+      br
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel' data-slide-to='0')
+        li(data-target='#myCarousel' data-slide-to='1')
+        li(data-target='#myCarousel' data-slide-to='2')
+      center
+        .carousel-inner.text-center(role='listbox')
+          .item.active
+            img(src='Images/wipro_seminar.png')
+          .item
+            img(src='Images/wipro_seminar.png')
+          .item
+            img(src='Images/wipro_seminar.png')
+      // Left and right controls
+      a.left.carousel-control(href='#myCarousel' role='button' data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel' role='button' data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
+    // Container (Contact Section)
+    #contact.container-fluid.bg-grey
+      h2.text-center CONTACT US
+      hr.text-centerd(width='180px;')
+      .row
+        .col-sm-5
+          p Contact Address :
+          p
+            span.glyphicon.glyphicon-map-marker
+            b  MIT-World Peace University
+            span
+          p        S.No.124, Paud Road, Kothrud, Pune,
+          |                Maharashtra 411038
+          p
+          p
+            span.glyphicon.glyphicon-phone  
+            |   (+91) - 9689890844
+          p
+            span.glyphicon.glyphicon-envelope  
+            |    rajendra.pawar@mitwpu.edu.in
+        form(action='#' method='post')
+          .col-sm-7.slideanim
+            .row
+              .col-sm-6.form-group
+                input#name.form-control(name='name' placeholder='Name' type='text' required='')
+              .col-sm-6.form-group
+                input#mobile.form-control(name='mobile' placeholder='Mobile' type='number' required='')
+            .row
+              .col-sm-12.form-group
+                input#email.form-control(name='email' placeholder='Email' type='email' required='')
+            textarea#comments.form-control(name='comments' placeholder='Comment' rows='5')
+            br
+            .row
+              .col-sm-12.form-group
+                button.btn.btn-default.pull-right(type='submit') Send
+      br
+    footer.container-fluid.text-center
+      a(href='#myPage' title='To Top')
+        span.glyphicon.glyphicon-chevron-up
+    script.
+      $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      scrollTop: $(hash).offset().top
+      }, 900, function(){
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+      } // End if
+      });
+      $(window).scroll(function() {
+      $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+      $(this).addClass("slide");
+      }
+      });
+      });
+      })
